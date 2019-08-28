@@ -3,6 +3,8 @@ body {
     margin: 0 50px;
 }
 
+/* fonts */
+
 @font-face {
     font-family: 'Digital tech';
     src: url('../resources/fonts/Digitaltech.woff2') format('woff2'),
@@ -19,6 +21,8 @@ body {
     font-style: normal;
 }
 
+/* globals */
+
 h1,
 li,
 a {
@@ -27,8 +31,6 @@ a {
     font-weight: normal;
     font-style: normal;
 }
-
-
 
 .main-nav {
     text-align: center;
@@ -77,6 +79,63 @@ a {
     max-height: 100vh;
     margin: auto;
     z-index: -1;
+    animation: earthRise 4s;
+    -webkit-animation: earthRise 4s;
+}
+
+@keyframes earthRise {
+    from{
+        bottom:-400px;
+        -webkit-animation-timing-function: ease;
+    }
+
+    to {
+        bottom: 0;
+        -webkit-animation-timing-function: ease;
+    }
+}
+
+.about-section {
+    margin-top: 170px;
+}
+
+.moon {
+    height: 70px;
+    position: absolute;
+    left: 930px;
+    top: 380px;
+
+    /*
+     * Sets up the animation duration, timing-function (or easing)
+     * and iteration-count. Ensure you use the appropriate vendor-specific 
+     * prefixes as well as the official syntax for now. Remember, tools like 
+     * CSS Please are your friends!
+     */
+    -webkit-animation: myOrbit 7s linear infinite; /* Chrome, Safari 5 */
+       -moz-animation: myOrbit 7s linear infinite; /* Firefox 5-15 */
+         -o-animation: myOrbit 7s linear infinite; /* Opera 12+ */
+            animation: myOrbit 7s linear infinite; /* Chrome, Firefox 16+, 
+                                                      IE 10+, Safari 5 */
+}
+
+@-webkit-keyframes myOrbit {
+    from { -webkit-transform: rotate(0deg) translateX(200px) rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg) translateX(200px) rotate(-360deg); }
+}
+
+@-moz-keyframes myOrbit {
+    from { -moz-transform: rotate(0deg) translateX(170px) rotate(0deg); }
+    to   { -moz-transform: rotate(360deg) translateX(170px) rotate(-360deg); }
+}
+
+@-o-keyframes myOrbit {
+    from { -o-transform: rotate(0deg) translateX(170px) rotate(0deg); }
+    to   { -o-transform: rotate(360deg) translateX(170px) rotate(-360deg); }
+}
+
+@keyframes myOrbit {
+    from { transform: rotate(0deg) translateX(300px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(300px) rotate(-360deg); }
 }
 
 
