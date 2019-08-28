@@ -34,5 +34,4 @@ Topics covered in this repo:
 2. Node.js and NPM
 3. Gulp
 4. Prettier
-5. ESLint
 
