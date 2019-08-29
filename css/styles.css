@@ -1,7 +1,11 @@
 body {
     background-color: black;
-    margin: 0 50px;
+    padding: 0 30px;
+    margin: auto;
+    max-width: 1200px;
 }
+
+
 
 /* fonts */
 
@@ -23,9 +27,21 @@ body {
 
 /* globals */
 
-h1,
+p,
 li,
 a {
+    font-family: 'Montserrat Regular';
+    font-size: 20px;
+    color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5
+.main-nav li,
+.main-nav a {
     color:white;
     font-family: 'Digital tech';
     font-weight: normal;
@@ -55,18 +71,25 @@ a {
     color: lightskyblue;
 }
 
-.main-header {
-    font-size: 100px;
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.tab-1 {
+    margin-left: 10px;
+}
+
+.tab-2 {
+    margin-left: 20px;
+}
+
+.text-center {
     text-align: center;
 }
 
-@media only screen and (max-width: 920px) {
-    .main-nav li {
-        display: block;
-        padding: 5px;
-        margin-right: 50px;
-        font-size: 35px;
-    }
+.main-header {
+    font-size: 100px;
 }
 
 /* home page */
@@ -95,50 +118,133 @@ a {
     }
 }
 
+/* about page */
 .about-section h1{
    margin-bottom: 0px;
 }
+
 .about-section {
-    margin-top: 300px;
+    margin-top: 200px;
+}
+
+.about-section p{
+    text-align: center;
 }
 
 .moon {
-    height: 70px;
-    position: absolute;
-    left: 930px;
-    top: 400px;
-
-    -webkit-animation: myOrbit 15s linear infinite; /* Chrome, Safari 5 */
-    -moz-animation: myOrbit 15s linear infinite; /* Firefox 5-15 */
-    -o-animation: myOrbit 15s linear infinite; /* Opera 12+ */
-    animation: myOrbit 15s linear infinite; /* Chrome, Firefox 16+,                                             IE 10+, Safari 5 */
-}
-
-@-webkit-keyframes myOrbit {
-    from { -webkit-transform: rotate(0deg) translateX(280px) rotate(0deg); }
-    to   { -webkit-transform: rotate(360deg) translateX(280px) rotate(-360deg); }
-}
-
-@-moz-keyframes myOrbit {
-    from { -moz-transform: rotate(0deg) translateX(280px) rotate(0deg); }
-    to   { -moz-transform: rotate(360deg) translateX(280px) rotate(-360deg); }
-}
-
-@-o-keyframes myOrbit {
-    from { -o-transform: rotate(0deg) translateX(280px) rotate(0deg); }
-    to   { -o-transform: rotate(360deg) translateX(280px) rotate(-360deg); }
-}
-
-@keyframes myOrbit {
-    from { transform: rotate(0deg) translateX(280px) rotate(0deg); }
-    to   { transform: rotate(360deg) translateX(280px) rotate(-360deg); }
-}
-
-
-/* about page */
-p {
-    font-family: 'Montserrat Regular';
     text-align: center;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin:auto;
+}
+
+
+
+/* HTML Page */
+.feature-box-container {
+    position: relative;
+    text-align: center;
+}
+
+.feature-box {
+    text-align: center;
+    width: 320px;
+    display: inline-block;
+    margin-right: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.feature-box-container :hover {
+    border-color: red;
+}
+
+.galaxy img {
+    height: 250px;
+    float: right;
+}
+
+button {
+    font-family: 'Montserrat Regular';
+    height: 50px;
+    padding: 0 20px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
     font-size: 20px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+button:hover {
     color: white;
+    border: 1px solid white;
+    background-color: black;
+}
+
+#messier-a:active {
+    color: green;
+    border: 1px solid green;
+    background-color: black;
+    outline: none;
+}
+
+#messier-b:active {
+    color: red;
+    border: 1px solid red;
+    background-color: black;
+    outline: none;
+}
+
+.jump-sections {
+    text-align: center;
+}
+
+.jump-sections a{
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 5px 10px;
+}
+
+.jump-sections a:hover{
+    color:red;
+}
+
+#return-top {
+    border-radius: 50px;
+    border: 1px solid white;
+    background-color: black;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1; 
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+
+#return-top:hover{
+   border-color: red;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 920px) {
+    .main-nav li {
+        display: block;
+        padding: 5px;
+        margin-right: 50px;
+        font-size: 35px;
+    }
+
+    .about-section { 
+        margin-top: 60px;
+    }
 }
