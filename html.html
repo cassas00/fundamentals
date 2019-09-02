@@ -1,108 +1,235 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
 
-  <title>HTML</title>
-  <meta name="description" content="HTML">
-  <meta name="author" content="Steven Cassalger">
+    <title>HTML</title>
+    <meta name="description" content="HTML" />
+    <meta name="author" content="Steven Cassalger" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  </head>
 
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
-</head>
-
-<body>
-  <nav class="main-nav">
-    <ul>
-      <li><a href="index.html"><img src="resources/images/earth_50px.png" alt="Home"></a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a class="nav-item-selected" href="html.html">HTML</a></li>
-      <li><a href="css.html">CSS</a></li>
-      <li><a href="js.html">JavaScript</a></li>
-    </ul>
-  </nav>
-
-  
-  <a id="return-top" href="#section-0">TOP</a>
-  
-
-  <main>
-    <section> 
-      <h1><a id="section-0"></a>why</h1>
-      <div class="feature-box-container">
-          <div class="feature-box">
-              <h2>Purpose</h2>
-              <p>The purpose of this page is to gain a deeper understanding of HTML and showcase it.</p>
-          </div>
-          <div class="feature-box">
-              <h2>Sections</h2>
-              <p>This single page will contain many sections to demonstrate various HTML elements.</p>
-          </div>
-          <div class="feature-box">
-              <h2>HTML5</h2>
-              <p>New HTML5 features will be looked at in depth and experimented with.</p>
-          </div>
-      </div>
-
-      <p class="text-center">Jump to</p>
-      <div class="jump-sections">
-        <a href="#section-1">section 1</a> 
-        <a href="#section-2">section 2</a>
-      </div>
-     
-    </section>
-    
-    <section> 
-      <h1><a id="section-1"></a>Section 1 - Basics</h1>
-
-      <div>
-        <h2>Galaxies</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <ol>
-          <li>Mily Way</li>
-          <li>Andromeda</li>
-          <li>Messier 81</li>
-        </ol>
-      
-      </div>
-      
-      <div class="galaxy tab-1">
-        <h3>Milky Way</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <img src="./resources/images/galaxy_transparent.gif" alt="galaxy">
-      </div>
-      
-      
-      <h3 class="tab-1">Andromeda</h3>
-      <p class="tab-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <body>
+    <a class="skip-main" href="#main">Skip to main content</a>
+    <nav class="main-nav">
       <ul>
-        <li>Formed 10 billion years ago</li>
-        <li>Approaching the Milky Way at approximately 100 to 140 kilometres per second.</li>
-        <li>The Andromeda Galaxy has a very crowded double nucleus.</li>
-        <li>Has at least one supermassive black hole hidden at the core.</li>
+        <li>
+          <a href="index.html"
+            ><img src="resources/images/earth_50px.png" alt="Home"
+          /></a>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="nav-item-selected" href="html.html">HTML</a></li>
+        <li><a href="css.html">CSS</a></li>
+        <li><a href="js.html">JavaScript</a></li>
       </ul>
-      
-      <h3 class="tab-1">Messier 81</h3>
-      <p class="tab-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      
-      <div class="tab-2">
-        <h4>Discovery</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <div class="text-center">
-           <p>When was Messier 81 first discovered? (click and hold to reveal answer)</p>
-          <button id="messier-a">1774</button>
-          <button id="messier-b">1747</button>
-        </div>
-      </div>
-    </section>
+    </nav>
 
-    <section> 
-      <h1><a id="section-2"></a>Section x - x</h1>
-  
-       
-    </section>
-  </main>
-  
-  <script src="js/scripts.js"></script>
-</body>
+    <a id="return-top" href="#section-0">TOP</a>
+
+    <main id="main">
+      <section>
+        <h1><a id="section-0"></a>why</h1>
+        <div class="feature-box-container">
+          <div class="feature-box">
+            <h2>Purpose</h2>
+            <p>
+              The purpose of this page is to gain a deeper understanding of HTML
+              and showcase it.
+            </p>
+          </div>
+          <div class="feature-box">
+            <h2>Sections</h2>
+            <p>
+              This single page will contain many sections to demonstrate various
+              HTML elements.
+            </p>
+          </div>
+          <div class="feature-box">
+            <h2>HTML5</h2>
+            <p>
+              New HTML5 features will be looked at in depth and experimented
+              with.
+            </p>
+          </div>
+        </div>
+
+        <p class="text-center">Jump to</p>
+        <div class="jump-sections">
+          <a href="#section-1">Basics</a>
+          <a href="#section-2">Accessability</a>
+          <a href="#section-3">SEO</a>
+          <a href="#section-4">Google Maps</a>
+          <a href="#section-5">Canvas</a>
+        </div>
+        <hr class="mt-20" />
+      </section>
+
+      <section>
+        <h1><a id="section-1"></a>Basics</h1>
+
+        <p>
+          <ins>Used in this section:</ins> headers, paragraphs, ordered list,
+          unordered list, anchor, links, image, horizontal rule, buttons and
+          text formatting (bold, strong, italic, deleted, inserted, blockquote,
+          mark, emphasized).
+        </p>
+
+        <div>
+          <h2>Galaxies</h2>
+          <p>
+            Lorem ipsum dolor sit amet,
+            <strong>consectetur adipiscing elit</strong>, sed do tempor
+            incididunt ut labore et dolore <mark>magna aliqua</mark>.
+          </p>
+          <ol>
+            <li>Mily Way</li>
+            <li>Andromeda</li>
+            <li>Messier 81</li>
+          </ol>
+        </div>
+
+        <div class="tab-1">
+          <h3>Milky Way</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo <b>consequat</b>.
+          </p>
+          <blockquote
+            cite="https://www.brainyquote.com/topics/milky-way-quotes"
+          >
+            <em
+              >The Milky Way is nothing else but a mass of innumerable stars
+              planted together in clusters.</em
+            >
+          </blockquote>
+          <p>- Galileo Galilei</p>
+        </div>
+
+        <div class="galaxy">
+          <h3 class="tab-1">Andromeda</h3>
+          <img
+            class="lozad"
+            src="data:,"
+            data-src="./resources/images/galaxy_transparent.gif"
+            alt="Andromeda Galaxy"
+          />
+          <p class="tab-1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <ul>
+            <li>Formed <del>4 billion</del> 10 billion years ago</li>
+            <li>
+              Approaching the Milky Way at approximately 100 to 140 kilometres
+              per second.
+            </li>
+            <li>The Andromeda Galaxy has a very crowded double nucleus.</li>
+            <li>
+              Has <i>at least one</i> supermassive black hole hidden at the
+              core.
+            </li>
+          </ul>
+        </div>
+
+        <h3 class="tab-1">Messier 81</h3>
+        <p class="tab-1">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+
+        <div class="tab-2">
+          <h4>Discovery</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <div class="text-center">
+            <p>
+              When was Messier 81 first discovered? (click and hold to reveal
+              answer)
+            </p>
+            <button id="messier-a">1774</button>
+            <button id="messier-b">1747</button>
+          </div>
+        </div>
+        <hr class="mt-20 mb-20" />
+      </section>
+
+      <section>
+        <h1><a id="section-2"></a>Accessability</h1>
+      </section>
+      <section>
+        <h1><a id="section-3"></a>SEO</h1>
+      </section>
+      <section>
+        <h1><a id="section-4"></a>Google Maps</h1>
+        <div id="googleMap" style="width:100%;height:400px;"></div>
+        <div class="mapTypeButtons">
+          <button onclick="setRoadmap()">Roadmap</button>
+          <button onclick="setSatellite()">Satellite</button>
+          <button onclick="setHybrid()">Hybrid</button>
+          <button onclick="setTerrain()">Terrain</button>
+        </div>
+      </section>
+      <section class="svg-section">
+        <h1><a id="section-5"></a>SVG</h1>
+
+        <svg class="svg-rocket" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50px" height="200px" style="fill:white" version="1.1" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+          <g><path d="M163.2,614.3C125.9,493.9,154.8,357.2,250,262c66.1-66.1,152.1-100.2,238.9-102.4l28.1-44.7c-6.3-0.3-12.7-0.4-19-0.4c-51.4,0-101.4,9.7-148.8,29c-49.1,19.9-93.1,49.1-130.8,86.9c-37.7,37.7-67,81.8-86.9,130.8c-19.2,47.4-29,97.5-29,148.8c0,48.9,8.8,96.5,26.2,141.9L163.2,614.3z"/><path d="M851.4,522.1c-2.2,86.7-36.4,172.8-102.4,238.9c-95.2,95.2-231.9,124.1-352.3,86.8l-37.5,34.5c45.3,17.4,93,26.2,141.9,26.2c51.4,0,101.4-9.7,148.8-29c49.1-19.9,93.1-49.1,130.8-86.9c37.7-37.7,67-81.8,86.9-130.8c19.2-47.4,29-97.5,29-148.8c0-6.4-0.2-12.7-0.5-19L851.4,522.1z"/><path d="M445,391.3c-26.9,46-34.1,124.4-34.1,124.4l23.2,23.2C460.4,495.5,541.6,404,541.6,404c75.3-84.8,114.1-58.5,114.1-58.5l49.7-49.7c-0.2-0.2-0.4-0.4-0.6-0.6c-39.9-39.9-39.9-104.5,0-144.4c39.9-39.9,104.5-39.9,144.4,0c0.2,0.2,0.4,0.4,0.6,0.6L989.4,11.8c-308-13.5-452.8,230.4-452.8,230.4c-119.8,8.6-249.4,137.2-249.4,137.2C371.3,362,445,391.3,445,391.3z"/><path d="M850.4,152.2c39.9,39.9,39.9,104.5,0,144.4c-39.9,39.9-104.5,39.9-144.4,0c-0.2-0.2-0.4-0.4-0.6-0.6l-49.7,49.7c0,0,26.3,38.8-58.5,114.1c0,0-91.5,81.2-134.9,107.5l23.2,23.2c0,0,78.4-7.1,124.4-34.1c0,0,29.3,73.7,11.9,157.7c0,0,128.7-129.6,137.2-249.4c0,0,243.9-144.8,230.4-452.8L849.7,151.6C849.9,151.8,850.2,152,850.4,152.2z"/><path d="M698.5,224.9c0,43.8,35.5,79.4,79.4,79.4c43.8,0,79.4-35.5,79.4-79.4c0-43.8-35.5-79.4-79.4-79.4C734.1,145.6,698.5,181.1,698.5,224.9z"/><path d="M415.6,585c49.7-29.7,120.6-85.8,157.8-118.1c92.6-80.5,71.8-105.4,68.5-108.4c-3-3.2-27.9-24.1-108.5,68.5c-32.3,37.2-88.4,108.1-118.1,157.8l-1,1c0.2-0.1,0.4-0.2,0.6-0.4c-0.1,0.2-0.2,0.4-0.4,0.6L415.6,585z"/><path d="M396.6,536.3L10,975.2l404.8-420.7L396.6,536.3z"/><path d="M444.2,583.9L23.5,988.7l438.9-386.6L444.2,583.9z"/></g>
+        </svg>
+
+        <svg class="svg-rocket" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100px" height="200px" style="fill:red" version="1.1" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+          <g><path d="M163.2,614.3C125.9,493.9,154.8,357.2,250,262c66.1-66.1,152.1-100.2,238.9-102.4l28.1-44.7c-6.3-0.3-12.7-0.4-19-0.4c-51.4,0-101.4,9.7-148.8,29c-49.1,19.9-93.1,49.1-130.8,86.9c-37.7,37.7-67,81.8-86.9,130.8c-19.2,47.4-29,97.5-29,148.8c0,48.9,8.8,96.5,26.2,141.9L163.2,614.3z"/><path d="M851.4,522.1c-2.2,86.7-36.4,172.8-102.4,238.9c-95.2,95.2-231.9,124.1-352.3,86.8l-37.5,34.5c45.3,17.4,93,26.2,141.9,26.2c51.4,0,101.4-9.7,148.8-29c49.1-19.9,93.1-49.1,130.8-86.9c37.7-37.7,67-81.8,86.9-130.8c19.2-47.4,29-97.5,29-148.8c0-6.4-0.2-12.7-0.5-19L851.4,522.1z"/><path d="M445,391.3c-26.9,46-34.1,124.4-34.1,124.4l23.2,23.2C460.4,495.5,541.6,404,541.6,404c75.3-84.8,114.1-58.5,114.1-58.5l49.7-49.7c-0.2-0.2-0.4-0.4-0.6-0.6c-39.9-39.9-39.9-104.5,0-144.4c39.9-39.9,104.5-39.9,144.4,0c0.2,0.2,0.4,0.4,0.6,0.6L989.4,11.8c-308-13.5-452.8,230.4-452.8,230.4c-119.8,8.6-249.4,137.2-249.4,137.2C371.3,362,445,391.3,445,391.3z"/><path d="M850.4,152.2c39.9,39.9,39.9,104.5,0,144.4c-39.9,39.9-104.5,39.9-144.4,0c-0.2-0.2-0.4-0.4-0.6-0.6l-49.7,49.7c0,0,26.3,38.8-58.5,114.1c0,0-91.5,81.2-134.9,107.5l23.2,23.2c0,0,78.4-7.1,124.4-34.1c0,0,29.3,73.7,11.9,157.7c0,0,128.7-129.6,137.2-249.4c0,0,243.9-144.8,230.4-452.8L849.7,151.6C849.9,151.8,850.2,152,850.4,152.2z"/><path d="M698.5,224.9c0,43.8,35.5,79.4,79.4,79.4c43.8,0,79.4-35.5,79.4-79.4c0-43.8-35.5-79.4-79.4-79.4C734.1,145.6,698.5,181.1,698.5,224.9z"/><path d="M415.6,585c49.7-29.7,120.6-85.8,157.8-118.1c92.6-80.5,71.8-105.4,68.5-108.4c-3-3.2-27.9-24.1-108.5,68.5c-32.3,37.2-88.4,108.1-118.1,157.8l-1,1c0.2-0.1,0.4-0.2,0.6-0.4c-0.1,0.2-0.2,0.4-0.4,0.6L415.6,585z"/><path d="M396.6,536.3L10,975.2l404.8-420.7L396.6,536.3z"/><path d="M444.2,583.9L23.5,988.7l438.9-386.6L444.2,583.9z"/></g>
+        </svg>
+
+        <svg class="svg-rocket" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150px" height="200px" style="fill:green" version="1.1" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+          <g><path d="M163.2,614.3C125.9,493.9,154.8,357.2,250,262c66.1-66.1,152.1-100.2,238.9-102.4l28.1-44.7c-6.3-0.3-12.7-0.4-19-0.4c-51.4,0-101.4,9.7-148.8,29c-49.1,19.9-93.1,49.1-130.8,86.9c-37.7,37.7-67,81.8-86.9,130.8c-19.2,47.4-29,97.5-29,148.8c0,48.9,8.8,96.5,26.2,141.9L163.2,614.3z"/><path d="M851.4,522.1c-2.2,86.7-36.4,172.8-102.4,238.9c-95.2,95.2-231.9,124.1-352.3,86.8l-37.5,34.5c45.3,17.4,93,26.2,141.9,26.2c51.4,0,101.4-9.7,148.8-29c49.1-19.9,93.1-49.1,130.8-86.9c37.7-37.7,67-81.8,86.9-130.8c19.2-47.4,29-97.5,29-148.8c0-6.4-0.2-12.7-0.5-19L851.4,522.1z"/><path d="M445,391.3c-26.9,46-34.1,124.4-34.1,124.4l23.2,23.2C460.4,495.5,541.6,404,541.6,404c75.3-84.8,114.1-58.5,114.1-58.5l49.7-49.7c-0.2-0.2-0.4-0.4-0.6-0.6c-39.9-39.9-39.9-104.5,0-144.4c39.9-39.9,104.5-39.9,144.4,0c0.2,0.2,0.4,0.4,0.6,0.6L989.4,11.8c-308-13.5-452.8,230.4-452.8,230.4c-119.8,8.6-249.4,137.2-249.4,137.2C371.3,362,445,391.3,445,391.3z"/><path d="M850.4,152.2c39.9,39.9,39.9,104.5,0,144.4c-39.9,39.9-104.5,39.9-144.4,0c-0.2-0.2-0.4-0.4-0.6-0.6l-49.7,49.7c0,0,26.3,38.8-58.5,114.1c0,0-91.5,81.2-134.9,107.5l23.2,23.2c0,0,78.4-7.1,124.4-34.1c0,0,29.3,73.7,11.9,157.7c0,0,128.7-129.6,137.2-249.4c0,0,243.9-144.8,230.4-452.8L849.7,151.6C849.9,151.8,850.2,152,850.4,152.2z"/><path d="M698.5,224.9c0,43.8,35.5,79.4,79.4,79.4c43.8,0,79.4-35.5,79.4-79.4c0-43.8-35.5-79.4-79.4-79.4C734.1,145.6,698.5,181.1,698.5,224.9z"/><path d="M415.6,585c49.7-29.7,120.6-85.8,157.8-118.1c92.6-80.5,71.8-105.4,68.5-108.4c-3-3.2-27.9-24.1-108.5,68.5c-32.3,37.2-88.4,108.1-118.1,157.8l-1,1c0.2-0.1,0.4-0.2,0.6-0.4c-0.1,0.2-0.2,0.4-0.4,0.6L415.6,585z"/><path d="M396.6,536.3L10,975.2l404.8-420.7L396.6,536.3z"/><path d="M444.2,583.9L23.5,988.7l438.9-386.6L444.2,583.9z"/></g>
+        </svg>
+
+        <svg class="svg-rocket" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200px" height="200px" style="fill:lightblue" version="1.1" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+          <defs>
+              <filter id="f1" x="0" y="0">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="15" />
+              </filter>
+            </defs>
+          <g filter="url(#f1)"><path d="M163.2,614.3C125.9,493.9,154.8,357.2,250,262c66.1-66.1,152.1-100.2,238.9-102.4l28.1-44.7c-6.3-0.3-12.7-0.4-19-0.4c-51.4,0-101.4,9.7-148.8,29c-49.1,19.9-93.1,49.1-130.8,86.9c-37.7,37.7-67,81.8-86.9,130.8c-19.2,47.4-29,97.5-29,148.8c0,48.9,8.8,96.5,26.2,141.9L163.2,614.3z"/><path d="M851.4,522.1c-2.2,86.7-36.4,172.8-102.4,238.9c-95.2,95.2-231.9,124.1-352.3,86.8l-37.5,34.5c45.3,17.4,93,26.2,141.9,26.2c51.4,0,101.4-9.7,148.8-29c49.1-19.9,93.1-49.1,130.8-86.9c37.7-37.7,67-81.8,86.9-130.8c19.2-47.4,29-97.5,29-148.8c0-6.4-0.2-12.7-0.5-19L851.4,522.1z"/><path d="M445,391.3c-26.9,46-34.1,124.4-34.1,124.4l23.2,23.2C460.4,495.5,541.6,404,541.6,404c75.3-84.8,114.1-58.5,114.1-58.5l49.7-49.7c-0.2-0.2-0.4-0.4-0.6-0.6c-39.9-39.9-39.9-104.5,0-144.4c39.9-39.9,104.5-39.9,144.4,0c0.2,0.2,0.4,0.4,0.6,0.6L989.4,11.8c-308-13.5-452.8,230.4-452.8,230.4c-119.8,8.6-249.4,137.2-249.4,137.2C371.3,362,445,391.3,445,391.3z"/><path d="M850.4,152.2c39.9,39.9,39.9,104.5,0,144.4c-39.9,39.9-104.5,39.9-144.4,0c-0.2-0.2-0.4-0.4-0.6-0.6l-49.7,49.7c0,0,26.3,38.8-58.5,114.1c0,0-91.5,81.2-134.9,107.5l23.2,23.2c0,0,78.4-7.1,124.4-34.1c0,0,29.3,73.7,11.9,157.7c0,0,128.7-129.6,137.2-249.4c0,0,243.9-144.8,230.4-452.8L849.7,151.6C849.9,151.8,850.2,152,850.4,152.2z"/><path d="M698.5,224.9c0,43.8,35.5,79.4,79.4,79.4c43.8,0,79.4-35.5,79.4-79.4c0-43.8-35.5-79.4-79.4-79.4C734.1,145.6,698.5,181.1,698.5,224.9z"/><path d="M415.6,585c49.7-29.7,120.6-85.8,157.8-118.1c92.6-80.5,71.8-105.4,68.5-108.4c-3-3.2-27.9-24.1-108.5,68.5c-32.3,37.2-88.4,108.1-118.1,157.8l-1,1c0.2-0.1,0.4-0.2,0.6-0.4c-0.1,0.2-0.2,0.4-0.4,0.6L415.6,585z"/><path d="M396.6,536.3L10,975.2l404.8-420.7L396.6,536.3z"/><path d="M444.2,583.9L23.5,988.7l438.9-386.6L444.2,583.9z"/></g>
+         
+        </svg>
+        <svg class="svg-rocket" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="250px" height="220px" style="fill:cyan" version="1.1" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+          <g><path d="M163.2,614.3C125.9,493.9,154.8,357.2,250,262c66.1-66.1,152.1-100.2,238.9-102.4l28.1-44.7c-6.3-0.3-12.7-0.4-19-0.4c-51.4,0-101.4,9.7-148.8,29c-49.1,19.9-93.1,49.1-130.8,86.9c-37.7,37.7-67,81.8-86.9,130.8c-19.2,47.4-29,97.5-29,148.8c0,48.9,8.8,96.5,26.2,141.9L163.2,614.3z"/><path d="M851.4,522.1c-2.2,86.7-36.4,172.8-102.4,238.9c-95.2,95.2-231.9,124.1-352.3,86.8l-37.5,34.5c45.3,17.4,93,26.2,141.9,26.2c51.4,0,101.4-9.7,148.8-29c49.1-19.9,93.1-49.1,130.8-86.9c37.7-37.7,67-81.8,86.9-130.8c19.2-47.4,29-97.5,29-148.8c0-6.4-0.2-12.7-0.5-19L851.4,522.1z"/><path d="M445,391.3c-26.9,46-34.1,124.4-34.1,124.4l23.2,23.2C460.4,495.5,541.6,404,541.6,404c75.3-84.8,114.1-58.5,114.1-58.5l49.7-49.7c-0.2-0.2-0.4-0.4-0.6-0.6c-39.9-39.9-39.9-104.5,0-144.4c39.9-39.9,104.5-39.9,144.4,0c0.2,0.2,0.4,0.4,0.6,0.6L989.4,11.8c-308-13.5-452.8,230.4-452.8,230.4c-119.8,8.6-249.4,137.2-249.4,137.2C371.3,362,445,391.3,445,391.3z"/><path d="M850.4,152.2c39.9,39.9,39.9,104.5,0,144.4c-39.9,39.9-104.5,39.9-144.4,0c-0.2-0.2-0.4-0.4-0.6-0.6l-49.7,49.7c0,0,26.3,38.8-58.5,114.1c0,0-91.5,81.2-134.9,107.5l23.2,23.2c0,0,78.4-7.1,124.4-34.1c0,0,29.3,73.7,11.9,157.7c0,0,128.7-129.6,137.2-249.4c0,0,243.9-144.8,230.4-452.8L849.7,151.6C849.9,151.8,850.2,152,850.4,152.2z"/><path d="M698.5,224.9c0,43.8,35.5,79.4,79.4,79.4c43.8,0,79.4-35.5,79.4-79.4c0-43.8-35.5-79.4-79.4-79.4C734.1,145.6,698.5,181.1,698.5,224.9z"/><path d="M415.6,585c49.7-29.7,120.6-85.8,157.8-118.1c92.6-80.5,71.8-105.4,68.5-108.4c-3-3.2-27.9-24.1-108.5,68.5c-32.3,37.2-88.4,108.1-118.1,157.8l-1,1c0.2-0.1,0.4-0.2,0.6-0.4c-0.1,0.2-0.2,0.4-0.4,0.6L415.6,585z"/><path d="M396.6,536.3L10,975.2l404.8-420.7L396.6,536.3z"/><path d="M444.2,583.9L23.5,988.7l438.9-386.6L444.2,583.9z"/></g>
+          <animate attributeType="CSS" attributeName="opacity" from="1" to="0" dur="6s" repeatCount="indefinite" />
+        </svg>
+
+        <svg class="svg-rocket" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="290px" height="230px" style="fill:pink" version="1.1" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+          <defs>
+              <filter id="f2" x="0" y="0" width="200%" height="200%">
+                <feOffset result="offOut" in="SourceGraphic" dx="50" dy="50" />
+                <feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+                <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+              </filter>
+            </defs>
+          <g filter="url(#f2)"><path d="M163.2,614.3C125.9,493.9,154.8,357.2,250,262c66.1-66.1,152.1-100.2,238.9-102.4l28.1-44.7c-6.3-0.3-12.7-0.4-19-0.4c-51.4,0-101.4,9.7-148.8,29c-49.1,19.9-93.1,49.1-130.8,86.9c-37.7,37.7-67,81.8-86.9,130.8c-19.2,47.4-29,97.5-29,148.8c0,48.9,8.8,96.5,26.2,141.9L163.2,614.3z"/><path d="M851.4,522.1c-2.2,86.7-36.4,172.8-102.4,238.9c-95.2,95.2-231.9,124.1-352.3,86.8l-37.5,34.5c45.3,17.4,93,26.2,141.9,26.2c51.4,0,101.4-9.7,148.8-29c49.1-19.9,93.1-49.1,130.8-86.9c37.7-37.7,67-81.8,86.9-130.8c19.2-47.4,29-97.5,29-148.8c0-6.4-0.2-12.7-0.5-19L851.4,522.1z"/><path d="M445,391.3c-26.9,46-34.1,124.4-34.1,124.4l23.2,23.2C460.4,495.5,541.6,404,541.6,404c75.3-84.8,114.1-58.5,114.1-58.5l49.7-49.7c-0.2-0.2-0.4-0.4-0.6-0.6c-39.9-39.9-39.9-104.5,0-144.4c39.9-39.9,104.5-39.9,144.4,0c0.2,0.2,0.4,0.4,0.6,0.6L989.4,11.8c-308-13.5-452.8,230.4-452.8,230.4c-119.8,8.6-249.4,137.2-249.4,137.2C371.3,362,445,391.3,445,391.3z"/><path d="M850.4,152.2c39.9,39.9,39.9,104.5,0,144.4c-39.9,39.9-104.5,39.9-144.4,0c-0.2-0.2-0.4-0.4-0.6-0.6l-49.7,49.7c0,0,26.3,38.8-58.5,114.1c0,0-91.5,81.2-134.9,107.5l23.2,23.2c0,0,78.4-7.1,124.4-34.1c0,0,29.3,73.7,11.9,157.7c0,0,128.7-129.6,137.2-249.4c0,0,243.9-144.8,230.4-452.8L849.7,151.6C849.9,151.8,850.2,152,850.4,152.2z"/><path d="M698.5,224.9c0,43.8,35.5,79.4,79.4,79.4c43.8,0,79.4-35.5,79.4-79.4c0-43.8-35.5-79.4-79.4-79.4C734.1,145.6,698.5,181.1,698.5,224.9z"/><path d="M415.6,585c49.7-29.7,120.6-85.8,157.8-118.1c92.6-80.5,71.8-105.4,68.5-108.4c-3-3.2-27.9-24.1-108.5,68.5c-32.3,37.2-88.4,108.1-118.1,157.8l-1,1c0.2-0.1,0.4-0.2,0.6-0.4c-0.1,0.2-0.2,0.4-0.4,0.6L415.6,585z"/><path d="M396.6,536.3L10,975.2l404.8-420.7L396.6,536.3z"/><path d="M444.2,583.9L23.5,988.7l438.9-386.6L444.2,583.9z"/></g>
+        </svg>
+      </section>
+      
+      <section>
+        <h1><a id="section-6"></a>Canvas</h1>
+      </section>
+    </main>
+
+    <script src="js/lozad.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUam60qfBiYCB631oJS1UKGy6VO2Vo2ak&callback=myMap"></script>
+  </body>
 </html>
